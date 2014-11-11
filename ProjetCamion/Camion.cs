@@ -9,7 +9,14 @@ namespace ProjetCamion
 {
     class Camion
     {
+        //*******************//
+        //*****en metre*****//
+        private Double Hauteur;
+        private Double Longueur;
+        private Double largeur;
+        //*******************//
         private Pen unStylo;
+        private Pen UnStyloFin;
         private Collection<Int32> NbrInterdit;
         private Rectangle[] rects = new Rectangle[200];
         private Collection<Point> PointsL = new Collection<Point>();
@@ -18,7 +25,10 @@ namespace ProjetCamion
         public Camion()
         {
             this.unStylo = new Pen(Color.Black, 2);
-            
+            this.UnStyloFin = new Pen(Color.Black, 1);
+            this.Hauteur = 1.8;
+            this.Longueur = 13.6;
+            this.largeur = 1.20;
 
             this.NbrInterdit = new Collection<Int32>();
             this.NbrInterdit.Add(10);
@@ -125,7 +135,6 @@ namespace ProjetCamion
                     this.PointsL.Add(new Point(x - 1, y + 128));
                     this.PointsL.Add(new Point(x, y));
                     this.PointsL.Add(new Point(x, y + 120));
-                    
                 }
 
                 uneFenetre.Paint += delegate(object sd, PaintEventArgs args)
@@ -146,6 +155,7 @@ namespace ProjetCamion
                     g.DrawEllipse(this.unStylo, new Rectangle(x + 310, y + 127, 48, 48));
                     g.DrawEllipse(this.unStylo, new Rectangle(x + 360, y + 127, 48, 48));
                     g.DrawLine(new Pen(Color.Black, 6), new Point(x, y + 124), new Point(x + 450, y + 124));
+                    
                 };
                 
         }
