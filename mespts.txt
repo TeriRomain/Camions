@@ -1,0 +1,10 @@
+this.PointsR.Add(new Point(x + 295, y + 444));
+this.PointsR.Add(new Point(x + 292, y + 449));
+this.PointsR.Add(new Point(x + 287, y + 453));
+this.PointsR.Add(new Point(x + 241, y + 454));
+this.PointsR.Add(new Point(x + 237, y + 449));
+this.PointsR.Add(new Point(x + 235, y + 442));
+this.PointsR.Add(new Point(x + 235, y + 438));
+this.PointsR.Add(new Point(x + 235, y + 435));
+this.PointsR.Add(new Point(x + 237, y + 432));
+this.PointsR.Add(new Point(x + 240, y + 426));
