@@ -31,9 +31,8 @@ namespace ProjetCamion
         {
             
             //this.DrawCamion(400, 150);
-            this.monCamion.DrawCamionLeft(400, 50, this);
-            this.monCamion.DrawCamionRight(400, 300, this);
-            this.richTextBox1.Text = this.monCamion.PointsR.Count.ToString()+"\n";
+            this.monCamion.DrawCamionLeft(700, 50, this);
+            this.monCamion.DrawCamionRight(650, 300, this);
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -43,7 +42,6 @@ namespace ProjetCamion
 
         private void clicsouris(object sender, MouseEventArgs e)
         {
-            this.richTextBox1.Text += "X : "+e.X+"  Y : "+e.Y+"\n";
             this.fichierTexte.WriteLine("this.PointsR.Add(new Point(x + "+(e.X-400).ToString()+", y + "+(e.Y-300).ToString()+"));");
         }
 
