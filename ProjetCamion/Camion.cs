@@ -21,14 +21,16 @@ namespace ProjetCamion
         private Rectangle[] rects = new Rectangle[200];
         private Collection<Point> PointsL = new Collection<Point>();
         public Collection<Point> PointsR = new Collection<Point>();
+        private Collection<Palette> PalettesCharge;
 
         public Camion()
         {
+            this.PalettesCharge = new Collection<Palette>();
             this.unStylo = new Pen(Color.Black, 2);
             this.UnStyloFin = new Pen(Color.Black, 1);
             this.Hauteur = 1.8;
             this.Longueur = 13.6;
-            this.largeur = 1.20;
+            this.largeur = 1.20*2;
 
             this.NbrInterdit = new Collection<Int32>();
             this.NbrInterdit.Add(10);
@@ -260,7 +262,6 @@ namespace ProjetCamion
             };
             
         }
-
 
     }
 }
